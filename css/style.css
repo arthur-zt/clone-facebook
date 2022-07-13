@@ -1,0 +1,277 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Lato;
+}
+html,body{
+	height: 100%;
+}
+.center{
+	max-width: 1100px;
+	padding: 0 2%;
+	margin: 0 auto;
+}
+.clear{
+	clear: both;
+}
+
+header{
+	background: rgb(33, 108, 206);
+	padding: 8px 0;
+}
+
+.logo{
+	float: left;
+	color: white;
+}
+
+.logo h2{
+	font-size: 29px;
+}
+
+form.form-login{
+	float: right;
+}
+
+.form-login .form-element{
+	display: inline-block;
+	margin-right: 15px;
+
+}
+
+.form-element p{
+	color: white;
+	font-size: 14px;
+}
+
+.form-element input[type=email],
+.form-element input[type=password]{
+	margin-top: 4px;
+	border-radius: 2px;
+	border: 0;
+	outline: none;
+	height: 19px;
+	padding-left: 3px;
+}
+
+.form-element input[type=submit]{
+	color: white;
+	cursor: pointer;
+	border: 2px solid rgba(17, 87, 173,0.2);
+	background: rgb(22, 95, 191);
+	padding: 3px 6px;
+	border-radius: 4px;
+}
+
+.form-element input[type=submit]:hover {
+	background-color: rgb(10, 75, 155);
+	transition: 0.3s;
+}
+
+section.main{
+	background: linear-gradient(white,#D3D8E8);
+	padding: 40px 0;
+}
+
+.img-pessoas{
+	float: left;
+	width: 60%;
+}
+
+.img-pessoas img{
+	max-width: 75%;
+}
+
+.abrir-conta{
+	width: 40%;
+	float: left;
+
+}
+
+.abrir-conta h2{
+	color: black;
+	font-size: 30px;
+}
+
+.abrir-conta h3{
+	font-size: 16px;
+	color: rgb(50,50,50);
+	font-weight: normal;
+
+}
+
+form.criar-conta{
+	margin-top: 10px;
+}
+
+.w50{
+	padding: 0 5px;
+	width: 50%;
+	float: left;
+}
+
+.w100{
+	padding: 0 5px;
+	width: 100%;
+	float: left;
+}
+
+form.criar-conta input{
+	width: 100%;
+	margin-top: 8px;
+}
+
+form.criar-conta input[type=email],
+form.criar-conta input[type=text],
+form.criar-conta input[type=password]{
+	outline: none;
+	font-size: 17px;
+	height: 40px;
+	padding-left: 10px;
+	border: 1px solid rgba(31, 118, 224,0.4);
+	border-radius: 6px;
+
+}
+
+form.criar-conta input[type=submit]{
+	height: 40px;
+	background: linear-gradient(#67ae55, #578843);
+	color: white;
+	cursor: pointer;
+	border: 0;
+	max-width: 200px;
+	font-size: 20px;
+	border-radius: 6px;
+}
+
+form .w100 h2{
+	margin-top: 10px;
+	font-size: 22px;
+	font-weight: normal;
+	color: 1d2129;
+}
+
+form select.nascimento{
+	float: left;
+	padding: 1% 0;
+	margin-top: 5px;
+}
+.input-radio{
+	margin: 8px 10px;
+	float: left;
+}
+
+.input-radio h2{
+	display: inline-block;
+}
+
+.input-radio input[type=radio]{
+	width: auto !important;
+	display: inline-block;
+}
+
+section.linguas{
+	padding: 30px 0;
+	background: white;
+
+}
+
+section.linguas a{
+	padding-right: 15px;
+	font-size: 14px;
+	color: #365899;
+	text-decoration: none;
+}
+
+section.linguas a.selected-lingua{
+	color: #737373;
+}
+
+section.linguas .center{
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ccc;
+}
+
+section.services{
+	text-align: justify;
+	margin-top: -24px;
+	padding-right: 3%;
+	background: white;
+}
+
+section.services a{
+	padding-right: 15px;
+	font-size: 14px;
+	color: #365899;
+	text-decoration: none;
+}
+
+section.services.center{
+	padding-bottom: 10px;
+}
+
+footer {
+	padding-top: 25px;
+	padding-right: 3%;
+}
+
+footer p{
+	font-size: 14px;
+	color: rgb(120,120,120);
+
+}
+
+@media screen and (max-width: 768px){
+	.logo{
+		padding-left: 3px;
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+
+form.form-login{
+		display: inline-block;
+		margin-top: 30px;
+		margin-bottom: 10px;
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+
+.form-login .form-element{
+	display: block;
+	margin: 10px 0;
+
+}
+
+	.form-element p{
+	color: white;
+	font-size: 14px;
+}
+
+.form-element input[type=email],
+.form-element input[type=password]{
+	margin-top: 4px;
+	border-radius: 2px;
+	border: 0;
+	outline: none;
+	height: 19px;
+	padding-left: 3px;
+	width: 100%;
+	max-width: 250px;
+}
+
+.img-pessoas{
+	display: none;
+}
+
+.abrir-conta{
+	width: 100%;
+}
+
+
+
+}

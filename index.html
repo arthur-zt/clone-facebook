@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="description" content="descriçao do meu site">
+	<meta name="keywords" content="palavras,divididas,por,virgula">
+	<meta name="author" content="Arthur Zancan">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@400;700&family=Open+Sans:wght@500;600&family=Poppins:wght@300&family=Radio+Canada&display=swap" rel="stylesheet">
+	<title>Login Facebook</title>
+</head>
+<body>
+	<header>
+		<div class="center">
+			<div class="logo">
+				<h2>Facebook</h2>
+			</div><!-- Logo -->
+			<form method="post" class="form-login">
+				<div class="form-element">
+					<p>Email ou telefone</p>
+					<input type="email" required />
+				</div><!--form-element-->
+
+				<div class="form-element">
+					<p>Senha:</p>
+					<input type="password" required />
+				</div><!--form-element-->
+
+				<div class="form-element">
+					<input type="submit" name="acao" value="Enviar" />
+				</div><!--form-element-->	
+
+			</form><!--Form-login-->
+			<div class="clear"></div>
+		</div><!-- Center -->
+	</header>
+
+	<section class="main">
+		<div class="center">
+
+			<div class="img-pessoas">
+				<img src="img/img1.png">
+			</div><!--img-pessoas-->
+
+			<div class="abrir-conta">
+				<h2>Abra sua conta</h2>
+				<h3>É gratuito e sempre será.</h3>
+
+				<form class="criar-conta">
+					<div class="w50">
+						<input type="text" placeholder="Nome" />
+					</div><!--w50-->
+
+					<div class="w50">
+						<input type="text" placeholder="Sobrenome" />
+					</div><!--w50-->
+
+					<div class="w100">
+						<input type="email" placeholder="Email" />
+					</div><!--w100-->
+
+					<div class="w100">
+						<input type="password" placeholder="Senha" />
+					</div><!--w100-->
+
+					<div class="w100">
+						<h2>Data de nascimento:</h2>
+						<select class="nascimento" name="nascimento-dia">
+							<?php
+								for ($i = 1; $i <=31 ; $i++) { 	
+							?>
+							<option value="<?php echo $i; ?>"><?php echo $i; ?></option>
+							<?php }  ?>
+						</select>
+
+						<select class="nascimento" name="nascimento-mes">
+							<option value="1" name>Janeiro</option>
+							<option value="2" name>Fevereiro</option>
+							<option value="3" name>Março</option>
+							<option value="4" name>Abril</option>
+							<option value="5" name>Maio</option>
+							<option value="6" name>Junho</option>
+							<option value="7" name>Julho</option>
+							<option value="8" name>Agosto</option>
+							<option value="9" name>Setembro</option>
+							<option value="10" name>Outubro</option>
+							<option value="11" name>Novembro</option>
+							<option value="12" name>Dezembro</option>
+						</select>
+
+						<select class="nascimento" name="nascimento-ano">
+							<?php
+								for ($i = 1950; $i <= 2022 ; $i++) { 	
+							?>
+							<option value="<?php echo $i; ?>"><?php echo $i; ?></option>
+							<?php }  ?>
+						</select>
+						<div class="clear"></div>
+					</div><!--w100-->
+
+					<div class="w100">
+						<div class="input-radio">
+							<input type="radio" name="sexo" value="masculino">
+							<h2>Masculino</h2>
+						</div><!--input-radio-->
+
+						<div class="input-radio">
+							<input type="radio" name="sexo" value="feminino">
+							<h2>Feminino</h2>
+						</div><!--input-radio-->
+						<div class="clear"></div>
+					</div><!--w100-->
+
+					<div class="w100">
+						<input type="submit" placeholder="Cadastre-se" value="Cadastrar" name="acao" />
+					</div><!--w100-->
+
+					<div class="clear"></div>
+				</form><!-- Criar conta-->
+			</div><!--abrir-conta-->
+
+			<div class="clear"></div>
+		</div><!-- center -->
+	</section><!-- Main -->
+
+	<section class="linguas">
+		<div class="center">
+			<a class="selected-lingua" href="">Português (Brasil)</a>
+			<a href="">English (US)</a>
+			<a href="">Español</a>
+			<a href="">Français (Francês)</a>
+			<a href="">Italiano</a>
+			<a href="">Deutsch</a>
+			<a href="">Árabe</a>
+			<a href="">Coreano</a>
+			<a href="">Mandarim</a>
+			<a href="">Russo</a>
+			<a href="">Japonês</a>
+		</div><!--center-->
+	</section><!--linguas-->
+
+	<section class="services">
+		<div class="center">
+			<a href="">Cadastre-se</a>
+			<a href="">Entrar</a>
+			<a href="">Messenger</a>
+			<a href="">Facebook lite</a>
+			<a href="">Celular</a>
+			<a href="">Encontrar amigos</a>
+			<a href="">Pessoas</a>
+			<a href="">Páginas</a>
+			<a href="">Locais</a>
+			<a href="">Jogos</a>
+			<a href="">Marketplace</a>
+			<a href="">Videos</a>
+			<a href="">Grupos</a>
+			<a href="">Receitas</a>
+			<a href="">Esportes</a>
+			<a href="">Look</a>
+			<a href="">Moments</a>
+			<a href="">Instagram</a>
+			<a href="">Local</a>
+			<a href="">Sobre</a>
+			<a href="">Criar anúncio</a>
+			<a href="">Criar página</a>
+			<a href="">Desenvolvedores</a>
+			<a href="">Carreiras</a>
+			<a href="">Privacidade</a>
+			<a href="">Cookies</a>
+			<a href="">Opções de anúncios</a>
+			<a href="">Termos</a>
+			<a href="">Ajuda</a>
+
+		</div><!--center-->
+	</section><!--services-->
+
+	<footer>
+		<div class="center">
+		<p class="rights">Facebook©2016</p>
+		</div>
+	</footer>
+</body>
+</html>
